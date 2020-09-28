@@ -1,0 +1,37 @@
+.top{
+	height: 500px;
+    background: url(https://images.tech.co/wp-content/uploads/2019/12/19112253/future-gaming-708x400.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+	padding: 10px;
+}
+.text{
+	position: relative;
+	color: rgb(69, 166, 0);
+	font-size: 50px;
+	top: 200px;
+	font-weight: 800;
+	text-transform: capitalize;
+}
+.grid-container{
+	height: 500px;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto auto;
+	text-align: center;
+}
+.grid-item{
+    font-family: 'Playfair Display', serif;
+    text-transform: capitalize;
+	font-size: 25px;
+	font-weight: 800;
+	padding-top: 70px;
+	border: 2px solid black;
+}
+#submit{
+	font-size: 20px;
+	padding: 10px;
+	border: 2px solid black;
+	border-radius: 10%;
+}

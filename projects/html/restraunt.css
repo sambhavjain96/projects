@@ -1,0 +1,122 @@
+body{
+	background: rgb(219, 92, 92);
+}
+.flex1{
+	display: grid;
+	grid-column-gap: 100px;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	justify-content: start;
+	align-content: center;
+	width: 800px;
+}
+a{
+	width: 100%;
+	background: yellow;
+	margin: 5px;
+	padding: 5px 30px;
+	font-size: 20px;
+	border: 2px solid black;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+    
+
+}
+.intro{
+	width: 100%;
+	height: 500px;
+	background: url(https://www.livemorezone.com/wp-content/uploads/north-indian-food-livemorezone-dbs.jpg);
+	background-size: cover;
+}
+.grid-container{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto auto;
+	grid-gap: 10px 10px;
+}
+#text{
+	background: green;
+	position: absolute;
+	top: 250px;
+	margin-left: 20px;
+	padding: 10px;
+}
+.grid-item{
+	position: relative;
+	background: rgb(150, 235, 120);
+	text-align: center;
+}.text1{
+	position: absolute;
+	top: 100px;
+}
+.speciality{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+
+}
+.icon{
+	position: relative;
+	background: white;
+	text-align: center;
+	height: 150px;
+	width: 300px;
+    margin: 10px;
+    border: 3px solid black;
+}
+h2{
+	position: relative;
+	top: 20px;
+}
+.speciality1{
+	position: relative;
+	top: 10px;
+}
+#icon{
+	position: relative;
+	top:30px;
+}
+.featured{
+	display: grid;
+	width: 100%;
+	grid-template-rows: auto auto;
+	grid-template-columns: 350px 350px 1fr;
+	grid-gap: 10px 10px;
+	background: white;
+	height: 500px;
+	align-content: space-evenly ;
+	align-items: center;
+}
+.img{ 
+	position: relative;
+	height: 300px;
+	width: 50%;
+	left: 100px;
+
+}
+#text2{
+	position: relative;
+	right: 150px;
+}
+@keyframes no-to-yes{
+	from{
+		border:0px solid black;
+	}
+	to{
+		border: 5px solid black;
+	}
+}
+.expand{
+	animation-name: no-to-yes;
+	animation-duration: 2s;
+}
+/*.gram{
+	text-align: center;
+}*/
+.gram p:before, .gram p:after {
+	content: '';
+	display: block;
+	background: black;
+	height: 10px;
+}

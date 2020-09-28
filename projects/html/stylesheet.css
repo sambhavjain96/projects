@@ -1,0 +1,159 @@
+
+body {
+	background: rgba(185, 201, 157, 0.4);
+	text-transform: capitalize;
+	text-align: justify;
+	font-size: 1.25em;
+	font-family: "kumbh sans", sans-serif;
+}
+#title{
+	color: rgb(52, 194, 101);
+	text-align: justify;
+	font-weight: 900;
+	font-family: "open sans", sans-serif;
+}
+#service-image {
+	height: 500px;
+	width: 500px;
+	background: radial-gradient( red 10%, blue 30%, green 40%, yellow 50%);
+    /*border: size style color;*/
+    border: 10px dotted rgb(20, 54, 110);
+    /*padding: top right bottom left
+               if 1 value same value on all sides*/
+    /*padding-right or - left or -top or-bottom*/
+/*margins similar to padding*/
+/**/
+}
+.link{
+	text-decoration: line-through;
+}
+.hp {
+	font-style: oblique;
+}
+#about-us-image{
+	height: 500px;
+	width: 60%;
+	border: 10px solid rgb(138, 29, 36);
+	padding: 10px 20px 30px 0;
+	margin: 10px 5px 15px 20px;
+	float: right;
+	/*float content pushes up to the direction*/
+	display: 
+	/*display property none inline block inline- block */
+}
+.site-table{
+	display: inline-block;
+} 
+.container-item{
+	height: 50px;
+	width: 70px;
+	background-color: red;
+	border: 2px solid black;
+	margin: 5px;
+	text-align: center;
+	font-size: 20px;
+	padding-top: 20px;
+	color: white;
+
+}
+.container{
+	height: 300px;
+	margin: 10px;
+	display: flex;
+	/*display:flex; sets basic flexbox characterstics to parent container*/
+	flex-direction: row;
+	/*flex direction sets the direction of flex*/
+	
+	/*it moves element to next row instead of squeezing it in space given*/
+   justify-content: center;
+    /*align the flex horizontally
+    space-between
+    space-around
+    center 
+    flex-end
+    */
+    align-items: center;
+    /*baseline property
+     stretch*/
+    }
+.grid-container{
+	background: white;
+	height: 500px;
+	margin: 10px;
+	display: grid;
+	/*activates grid properties*/
+	grid-template-columns: auto auto auto; 
+	/*grid-template-columns  sets columns in grid*/
+	grid-template-rows: auto auto;
+	/*grid-template-rows: sets the rows in grid*/
+	/*auto value to both will automatically alot equal spaces*/
+	/*justify-content: space-around;*/
+	/*aligns content in grid*/
+	/*align-content: space-evenly;*/
+	/*basically align contents vertically*/
+	/*grid-column-gap: 100px;*/
+	/*grid-row-gap: 100px;*/
+	/*grid-gap: 100px 100px;*/
+	/*grid-gap: column row;* shorthand for grid-column-gap*/
+	/*grid-row-gap*/
+	
+} 
+.grid-item{
+	line-height:50px;
+	width: 50px;
+	margin: 5px;
+	text-align: center;
+
+}
+/*TRANSITION PROPERTY*/
+.submit-button{
+	padding: 10px;
+	margin: 20px 30px;
+	background: steelblue;
+	color: white;
+	font-weight: 800;
+	transition: background 300ms ease-in-out;
+	/*trasition: property duration type delay;
+	for many properties use , or add all*/
+	/*transform: translate(50px, 20px);*/
+	/*transform: translate(); it basically moves 
+	item in 2d vector*/
+    /*transform: scale();* it size up the element*/
+    /*transform: rotate(45deg);*/
+    transform: matrix(1, 0.6, 0.4, 2, 100, 50);
+    /*transform: matrix(scalex, skewx, skewy, scaley, translatex, y);*/
+} 
+.submit-button:hover{
+	background: rgb(83, 120, 58); 
+}
+/*adding animation*/
+#about-me{
+	/*animation-name: red-to-black;
+	/*animation properties*/
+	/*animation-duration: 4s;*/
+	/*animation-timing-function: linear;*/
+	/*animation-delay: 2s; can have negative*/
+	/*animation-iteration-count: 2; number of times animation repeat*/
+	/*animation-direction: alternate-reverse;*/
+	animation: red-to-black 4s linear 0s 2 alternate;
+	/*animatin shorthand
+	animation: animation-name duration timimng delay iteration direction*/
+}
+/*:hover psudoclass*/
+@keyframes red-to-black{
+	0%{
+		background: red;
+		transform: translate(0px, 0px);
+}
+     50%{
+     	background: blue;
+     	transform: translate(10px, 10px);
+     } 
+     100%{
+     	background: black;
+     	transform: translate(20px, 20px);
+     }  
+}
+/*keyframes use to create animation
+we use from and to for start and end
+and to create different animation at different intervals we use percent*/
